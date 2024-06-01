@@ -1,0 +1,30 @@
+.karban-board{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+.coloumn{
+    width: 50%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 20px 0px;
+    margin-bottom: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    .coloumn-header{
+        font-size: 20px;
+        font-weight: 800;
+        color: gray;
+        text-align: start;
+        padding-left: 10px;
+    }
+
+    .task{
+        background-color: rgb(222, 152, 60);
+        color: white;
+        padding: 5px 0px;
+        margin: 10px 10px;
+    }
+}

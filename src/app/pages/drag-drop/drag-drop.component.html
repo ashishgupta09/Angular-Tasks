@@ -1,1 +1,52 @@
-<p>drag-drop works!</p>
+<div class="container mt-2">
+    <div class="row">
+        <div class="col mb-3">
+            <h1 class="text-center">Drag n Drop</h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="karban-board">
+
+                <div class="coloumn" (dragover)="onDragOver($event)" (drop)="onDrop($event, 'To Do')">
+                    <div class="coloumn-header">To do</div>
+                    <div class="task"
+                     *ngFor="let task of filterTicker('To Do')" 
+                     (dragstart)="onDragStart(task)"
+                     draggable="true"
+                     >
+                        {{task.ticketId}}
+                        <br>
+                        {{task.ticketName}}
+                    </div>
+                </div>
+
+                <div class="coloumn"  (dragover)="onDragOver($event)" (drop)="onDrop($event, 'In Progress')">
+                    <div class="coloumn-header">In Progress</div>
+                    <div class="task" 
+                    *ngFor="let task of filterTicker('In Progress')"
+                    (dragstart)="onDragStart(task)"
+                    draggable="true"
+                    >{{task.ticketId}}
+                        <br>
+                        {{task.ticketName}}
+                    </div>
+                </div>
+
+                <div class="coloumn" (dragover)="onDragOver($event)" (drop)="onDrop($event, 'Done')">
+                    <div class="coloumn-header">Done</div>
+                    <div class="task"
+                     *ngFor="let task of filterTicker('Done')"
+                     (dragstart)="onDragStart(task)"
+                     draggable="true"
+                     >{{task.ticketId}}
+                        <br>
+                        {{task.ticketName}}
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
