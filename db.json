@@ -8,14 +8,29 @@
   ],
   "comments": [
     {
-      "id": "1",
-      "body": "Nice post!",
-      "postId": 1
+      "year": 2015,
+      "amount": 5000,
+      "colorcode": "green"
     },
     {
-      "id": "2",
-      "body": "Thanks for sharing.",
-      "postId": 2
+      "year": 2016,
+      "amount": 2000,
+      "colorcode": "blue"
+    },
+    {
+      "year": 2017,
+      "amount": 3000,
+      "colorcode": "pink"
+    },
+    {
+      "year": 2018,
+      "amount": 9000,
+      "colorcode": "yellow"
+    },
+    {
+      "year": 2019,
+      "amount": 7000,
+      "colorcode": "Red"
     }
   ],
   "profile": {

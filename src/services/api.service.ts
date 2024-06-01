@@ -27,5 +27,9 @@ export class ApiService {
   updateData(id: string, requestBody: any) {
     return this.http.put(`${this.baseUrl}/${id}`, requestBody);
   }
-  
+
+  loadData(){
+    return  this.http.get('http://localhost:3000/comments');
+  }
+
 }
