@@ -1,0 +1,63 @@
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary ms-5 mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="openModel()">
+    Add Data
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form [formGroup]="dataFormGroup" >
+                    <div class="mt-2">
+                        <label for="">Title</label>
+                        <input type="text" class="form-control" formControlName="title">
+                    </div>
+                   
+                    <div class="mt-2">
+                        <label for="">Author</label>
+                        <input type="text" class="form-control" formControlName="author">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" (click)="postData()" data-bs-dismiss="modal" *ngIf="addForm">Add</button>
+                <button type="button" class="btn btn-primary"  data-bs-dismiss="modal" (click)="updateData()" *ngIf="updateForm">Update</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <table class="table mt-5">
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let list of data">
+                    <td>{{list.id}}</td>
+                    <td>{{list.title}}</td>
+                    <td>{{list.author}}</td>
+                    <td>
+                        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="patchData(list)">Update</button>
+                        <button class="btn btn-danger ms-2" (click)="deletedata(list.id)">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
