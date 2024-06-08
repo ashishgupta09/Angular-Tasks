@@ -7,6 +7,8 @@ import { AddCardComponent } from './pages/add-card/add-card.component';
 import { UploadDownloadImageComponent } from './pages/upload-download-image/upload-download-image.component';
 import { CreatePopupComponent } from './pages/create-popup/create-popup.component';
 import { CustomTabComponent } from './pages/custom-tab/custom-tab.component';
+import { MutiSelectDropdownComponent } from './pages/muti-select-dropdown/muti-select-dropdown.component';
+import { FullCelenderComponent } from './pages/full-celender/full-celender.component';
 
 const routes: Routes = [
   { path: 'crud', component: CrudOpertionComponent },
@@ -15,7 +17,9 @@ const routes: Routes = [
   { path: 'add', component: AddCardComponent },
   { path: 'image', component: UploadDownloadImageComponent },
   { path: 'pop-up', component:CreatePopupComponent },
-  { path: 'custom-tab', component:CustomTabComponent }
+  { path: 'custom-tab', component:CustomTabComponent },
+  { path:'multi-dropdown',component:MutiSelectDropdownComponent},
+  { path:'celender',component:FullCelenderComponent}
 
 
 ];

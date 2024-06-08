@@ -2,16 +2,20 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { HttpClientModule } from '@angular/common/http';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FullCalendarModule } from '@fullcalendar/angular';
+import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CrudOpertionComponent } from './pages/crud-opertion/crud-opertion.component';
-import { DragDropComponent } from './pages/drag-drop/drag-drop.component';
-import { ChartComponent } from './pages/chart/chart.component';
 import { AddCardComponent } from './pages/add-card/add-card.component';
-import { UploadDownloadImageComponent } from './pages/upload-download-image/upload-download-image.component';
+import { ChartComponent } from './pages/chart/chart.component';
 import { CreatePopupComponent } from './pages/create-popup/create-popup.component';
+import { CrudOpertionComponent } from './pages/crud-opertion/crud-opertion.component';
 import { CustomTabComponent } from './pages/custom-tab/custom-tab.component';
+import { DragDropComponent } from './pages/drag-drop/drag-drop.component';
+import { FullCelenderComponent } from './pages/full-celender/full-celender.component';
+import { MutiSelectDropdownComponent } from './pages/muti-select-dropdown/muti-select-dropdown.component';
+import { UploadDownloadImageComponent } from './pages/upload-download-image/upload-download-image.component';
 
 @NgModule({
   declarations: [
@@ -23,12 +27,17 @@ import { CustomTabComponent } from './pages/custom-tab/custom-tab.component';
     UploadDownloadImageComponent,
     CreatePopupComponent,
     CustomTabComponent,
+    MutiSelectDropdownComponent,
+    FullCelenderComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgMultiSelectDropDownModule.forRoot(),
+    FormsModule,
+    FullCalendarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
