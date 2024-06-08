@@ -6,6 +6,7 @@ import { ChartComponent } from './pages/chart/chart.component';
 import { AddCardComponent } from './pages/add-card/add-card.component';
 import { UploadDownloadImageComponent } from './pages/upload-download-image/upload-download-image.component';
 import { CreatePopupComponent } from './pages/create-popup/create-popup.component';
+import { CustomTabComponent } from './pages/custom-tab/custom-tab.component';
 
 const routes: Routes = [
   { path: 'crud', component: CrudOpertionComponent },
@@ -13,7 +14,10 @@ const routes: Routes = [
   { path: 'drag', component: DragDropComponent },
   { path: 'add', component: AddCardComponent },
   { path: 'image', component: UploadDownloadImageComponent },
-  { path: 'pop-up', component:CreatePopupComponent }
+  { path: 'pop-up', component:CreatePopupComponent },
+  { path: 'custom-tab', component:CustomTabComponent }
+
+
 ];
 
 @NgModule({

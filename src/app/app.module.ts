@@ -11,6 +11,7 @@ import { ChartComponent } from './pages/chart/chart.component';
 import { AddCardComponent } from './pages/add-card/add-card.component';
 import { UploadDownloadImageComponent } from './pages/upload-download-image/upload-download-image.component';
 import { CreatePopupComponent } from './pages/create-popup/create-popup.component';
+import { CustomTabComponent } from './pages/custom-tab/custom-tab.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { CreatePopupComponent } from './pages/create-popup/create-popup.componen
     AddCardComponent,
     UploadDownloadImageComponent,
     CreatePopupComponent,
+    CustomTabComponent,
   ],
   imports: [
     BrowserModule,

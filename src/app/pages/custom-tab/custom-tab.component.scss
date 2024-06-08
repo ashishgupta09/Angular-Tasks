@@ -1,0 +1,38 @@
+.tab-main {
+    list-style-type: none;
+    cursor: pointer;
+    background: rgb(244, 177, 177);
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 10px;
+    border-radius: 10px;
+
+    li {
+        display: inline-block;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .color{
+        color: red;
+    }
+}
+
+.content {
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
+
+    .content-value {
+        h1 {
+            font-size: 25px;
+            margin: 10px 0px;
+        }
+
+        p{
+            font-size: 15px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color:#888888;
+        }
+    }
+}

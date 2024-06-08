@@ -1,0 +1,74 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <ul class="tab-main">
+                <li id="home" [class.color]="id === 'home'" (click)="tabChange('home')">Home</li>
+                <li id="service" [class.color]="id === 'service'" (click)="tabChange('service')">Service</li>
+                <li id="information" [class.color]="id === 'information'" (click)="tabChange('information')">Information</li>
+                <li id="about" [class.color]="id === 'about'" (click)="tabChange('about')">About</li>
+                <li id="contact" [class.color]="id === 'contact'" (click)="tabChange('contact')">Contact</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="content">
+                <div class="content-value" *ngIf="id === 'home'">
+                    <h1>Home</h1>
+                    <p>A home, or domicile, is a space used as a permanent or semi-permanent residence for one or more
+                        human occupants, and sometimes various companion animals. It is a fully- or semi-sheltered space
+                        and can have both interior and exterior aspects to it.[vague] Homes provide sheltered spaces,
+                        for instance rooms, where domestic activity can be performed such as sleeping, preparing food,
+                        eating and hygiene as well as providing spaces for work and leisure such as remote working,
+                        studying and playing.
+                    </p>
+                </div>
+                <div class="content-value" *ngIf="id === 'service'">
+                    <h1>Service</h1>
+                    <p>Developed as part of Panchayat Enterprise Suite (PES) under epanchayat Mission Mode Project
+                        (MMP).
+                        ServicePlus meta-data based e-Service delivery framework which is built on LowCode–NoCode (LCNC)
+                        architecture for delivering electronic-services to citizens. An application which is quick to
+                        learn and easy to use with minimal effort or very less skill set.
+                    </p>
+                </div>
+                <div class="content-value" *ngIf="id === 'information'">
+                    <h1>Information</h1>
+                    <p>Information is an abstract concept that refers to something which has the power to inform. At the
+                        most fundamental level, it pertains to the interpretation (perhaps formally) of that which may
+                        be sensed, or their abstractions. Any natural process that is not completely random and any
+                        observable pattern in any medium can be said to convey some amount of information. Whereas
+                        digital signals and other data use discrete signs to convey information, other phenomena and
+                        artifacts such as analogue signals, poems, pictures, music or other sounds, and currents convey
+                        information in a more continuous form.[1] Information is not knowledge itself, but the meaning
+                        that may be derived from a representation through interpretation.
+                    </p>
+                </div>
+                <div class="content-value" *ngIf="id === 'about'">
+                    <h1>About</h1>
+                    <p>
+                        An essay is, generally, a piece of writing that gives the author's own argument, but the
+                        definition is vague, overlapping with those of a letter, a paper, an article, a pamphlet, and a
+                        short story. Essays have been sub-classified as formal and informal: formal essays are
+                        characterized by "serious purpose, dignity, logical organization, length," whereas the informal
+                        essay is characterized by "the personal element (self-revelation, individual tastes and
+                        experiences, confidential manner), humor, graceful style, rambling structure, unconventionality
+                        or novelty of theme,"
+                    </p>
+                </div>
+                <div class="content-value" *ngIf="id === 'contact'">
+                    <h1>Contact</h1>
+                    <p>
+                        Content. The content of an essay is based around research of the topic. This means explaining
+                        and justifying your ideas based on information and examples from reliable sources. It is
+                        important that your essay has a central idea or argument that the essay content is focussed on.
+                        This is known as a thesis statement.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
