@@ -9,6 +9,8 @@ import { CrudOpertionComponent } from './pages/crud-opertion/crud-opertion.compo
 import { DragDropComponent } from './pages/drag-drop/drag-drop.component';
 import { ChartComponent } from './pages/chart/chart.component';
 import { AddCardComponent } from './pages/add-card/add-card.component';
+import { UploadDownloadImageComponent } from './pages/upload-download-image/upload-download-image.component';
+import { CreatePopupComponent } from './pages/create-popup/create-popup.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { AddCardComponent } from './pages/add-card/add-card.component';
     DragDropComponent,
     ChartComponent,
     AddCardComponent,
+    UploadDownloadImageComponent,
+    CreatePopupComponent,
   ],
   imports: [
     BrowserModule,
