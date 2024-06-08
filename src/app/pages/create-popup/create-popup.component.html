@@ -8,11 +8,19 @@
             &times;
         </div>
         <div>
-            <span>Username</span>
-            <input type="text" class="form-control">
-            <span>Password</span>
-            <input type="text" class="form-control">
-            <button class="btn btn-primary mt-3">Sign-in</button>
+            <div class="field">
+                <span>Username</span>
+                <input type="text" class="form-control">
+            </div>
+            <div>
+                <span>Password</span>
+                <input type="text" class="form-control" [type]="showPassword ? 'text': 'password' ">
+                <div class="eye-image">
+                    <i class="bi bi-eye" *ngIf="!showPassword" (click)="toggleShow()"></i>
+                    <i class="bi bi-eye-slash" *ngIf="showPassword" (click)="toggleShow()"></i>
+                </div>
+            </div>
+            <button class="btn btn-primary">Sign-in</button>
         </div>
     </div>
 </div>

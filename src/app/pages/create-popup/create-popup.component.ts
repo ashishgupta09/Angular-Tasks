@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class CreatePopupComponent {
   show: boolean = false;
+  showPassword: boolean = false;
 
   openPopUp() {
     this.show = true;
@@ -21,4 +22,11 @@ export class CreatePopupComponent {
       this.show = false
     }
   }
+
+  //for show and hide password
+
+  toggleShow() {
+    this.showPassword = !this.showPassword;
+  }
+
 }
