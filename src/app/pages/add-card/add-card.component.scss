@@ -1,0 +1,68 @@
+.first-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 15px 50px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 50%;
+    
+  }
+  
+  .first-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .first-card-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .content {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .value {
+    color: #555;
+  }
+  
+  .discr {
+    margin-top: 20px;
+  }
+  
+  .adj-dis {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .val {
+    color: #777;
+  }
+  
+  .last-btn {
+    text-align: right;
+    margin-top: 20px;
+  }
+  
+  .third-card-btn {
+    background-color: #3880ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .third-card-btn:hover {
+    background-color: #3171e0;
+  }
+  
+  .new{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

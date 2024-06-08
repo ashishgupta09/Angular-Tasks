@@ -64,7 +64,6 @@ export class CrudOpertionComponent {
 
   updateData() {
     const form =  this.dataFormGroup.value;
-
     this.api.updateData(this.id, form).subscribe((res: any) => {
       this.getData();
     })

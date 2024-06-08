@@ -1,0 +1,57 @@
+<ng-container *ngFor="let task of firstTaskList">
+    <div class="first-card">
+      <div class="first-card-content">
+        <span class="content">Task Number:</span>
+        <span class="value">{{task.id}}</span>
+      </div>
+      <div class="first-card-content">
+        <span class="content">Task Title:</span>
+        <span class="value">{{task.title}}</span>
+      </div>
+      <div class="first-card-content">
+        <span class="content">Due Date:</span>
+        <span class="value">{{task.dueDate}}</span>
+      </div>
+      <div class="first-card-content">
+        <span class="content">Status:</span>
+        <span class="value">{{task.createUser.status}}</span>
+      </div>
+      <div class="discr">
+        <span class="adj-dis">Description:</span>
+        <span class="val"><i>{{task.description}}</i></span>
+      </div>
+    </div>
+  </ng-container>
+  
+  <div class="new">
+    <h2>Required Action</h2>
+  </div>
+  
+  <ng-container *ngFor="let task of secondTaskList">
+    <div class="first-card">
+      <div class="first-card-content">
+        <span class="content">Task Number:</span>
+        <span class="value">{{task.id}}</span>
+      </div>
+      <div class="first-card-content">
+        <span class="content">Task Title:</span>
+        <span class="value">{{task.title}}</span>
+      </div>
+      <div class="first-card-content">
+        <span class="content">Due Date:</span>
+        <span class="value">{{task.dueDate}}</span>
+      </div>
+      <div class="first-card-content">
+        <span class="content">Status:</span>
+        <span class="value">{{task.createUser.status}}</span>
+      </div>
+      <div class="discr">
+        <span class="adj-dis">Description:</span>
+        <span class="val"><i>{{task.description}}</i></span>
+      </div>
+      <div class="last-btn">
+        <button class="third-card-btn" (click)="handleImageUpload(task.id)">Upload</button>
+      </div>
+    </div>
+  </ng-container>
+  

@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { CrudOpertionComponent } from './pages/crud-opertion/crud-opertion.component';
 import { DragDropComponent } from './pages/drag-drop/drag-drop.component';
 import { ChartComponent } from './pages/chart/chart.component';
+import { AddCardComponent } from './pages/add-card/add-card.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { ChartComponent } from './pages/chart/chart.component';
     CrudOpertionComponent,
     DragDropComponent,
     ChartComponent,
+    AddCardComponent,
   ],
   imports: [
     BrowserModule,
