@@ -17,6 +17,7 @@ import { FullCelenderComponent } from './pages/full-celender/full-celender.compo
 import { MutiSelectDropdownComponent } from './pages/muti-select-dropdown/muti-select-dropdown.component';
 import { UploadDownloadImageComponent } from './pages/upload-download-image/upload-download-image.component';
 import { AccordionComponent } from './pages/accordion/accordion.component';
+import { SideTabsComponent } from './pages/side-tabs/side-tabs.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { AccordionComponent } from './pages/accordion/accordion.component';
     MutiSelectDropdownComponent,
     FullCelenderComponent,
     AccordionComponent,
+    SideTabsComponent,
   ],
   imports: [
     BrowserModule,

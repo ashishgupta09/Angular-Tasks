@@ -10,6 +10,7 @@ import { CustomTabComponent } from './pages/custom-tab/custom-tab.component';
 import { MutiSelectDropdownComponent } from './pages/muti-select-dropdown/muti-select-dropdown.component';
 import { FullCelenderComponent } from './pages/full-celender/full-celender.component';
 import { AccordionComponent } from './pages/accordion/accordion.component';
+import { SideTabsComponent } from './pages/side-tabs/side-tabs.component';
 
 const routes: Routes = [
   { path: 'crud', component: CrudOpertionComponent },
@@ -21,7 +22,8 @@ const routes: Routes = [
   { path: 'custom-tab', component: CustomTabComponent },
   { path: 'multi-dropdown', component: MutiSelectDropdownComponent },
   { path: 'celender', component: FullCelenderComponent },
-  { path: 'accordion', component: AccordionComponent }
+  { path: 'accordion', component: AccordionComponent },
+  { path: 'tabs', component: SideTabsComponent }
 
 ];
 

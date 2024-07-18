@@ -1,0 +1,30 @@
+<div class="header">
+    <h3>Click on the buttons inside the tabbed menu:</h3>
+</div>
+
+<div>
+    <button class="tablink" (click)="openCity('Home', $event, 'red')">Home</button>
+    <button class="tablink" (click)="openCity('News', $event, 'green')" id="defaultOpen">News</button>
+    <button class="tablink" (click)="openCity('Contact', $event, 'blue')">Contact</button>
+    <button class="tablink" (click)="openCity('About', $event, 'orange')">About</button>
+</div>
+
+<div id="Home" class="tabcontent">
+    <h3>Home</h3>
+    <p>Home is where the heart is..</p>
+</div>
+
+<div id="News" class="tabcontent">
+    <h3>News</h3>
+    <p>Some news this fine day!</p>
+</div>
+
+<div id="Contact" class="tabcontent">
+    <h3>Contact</h3>
+    <p>Get in touch, or swing by for a cup of coffee.</p>
+</div>
+
+<div id="About" class="tabcontent">
+    <h3>About</h3>
+    <p>Who we are and what we do.</p>
+</div>
