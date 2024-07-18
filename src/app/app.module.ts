@@ -16,6 +16,7 @@ import { DragDropComponent } from './pages/drag-drop/drag-drop.component';
 import { FullCelenderComponent } from './pages/full-celender/full-celender.component';
 import { MutiSelectDropdownComponent } from './pages/muti-select-dropdown/muti-select-dropdown.component';
 import { UploadDownloadImageComponent } from './pages/upload-download-image/upload-download-image.component';
+import { AccordionComponent } from './pages/accordion/accordion.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { UploadDownloadImageComponent } from './pages/upload-download-image/uplo
     CustomTabComponent,
     MutiSelectDropdownComponent,
     FullCelenderComponent,
+    AccordionComponent,
   ],
   imports: [
     BrowserModule,
